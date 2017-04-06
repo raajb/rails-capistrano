@@ -1,11 +1,9 @@
 # config valid only for current version of Capistrano
 lock "3.8.0"
 
-set :application, "my_app_name"
-set :repo_url, "git@example.com:me/my_repo.git"
-
+# be sure to change these vaiables to the right values
 set :application, "rails-capistrano"
-set :repo_url, "YOUR GIT URL HERE"
+set :repo_url, "git@github.com:raajb/rails-capistrano.git"
 set :deploy_user, "deploy"
 set :deploy_to, "/home/#{fetch :deploy_user}/#{fetch :application}"
 
@@ -14,6 +12,7 @@ set :deploy_to, "/home/#{fetch :deploy_user}/#{fetch :application}"
 
 # Default deploy_to directory is /var/www/my_app_name
 # set :deploy_to, "/var/www/my_app_name"
+
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh

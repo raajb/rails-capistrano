@@ -7,6 +7,8 @@
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
+  #replace the ip address with the app's ip address
+  server "104.131.48.235", user: "deploy", roles: ["app", "db", "web"]
 
 
 # role-based syntax
